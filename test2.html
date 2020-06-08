@@ -1,0 +1,152 @@
+<style>
+    body {
+   position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  
+}
+ 
+  #background {
+    background: url('https://i.pinimg.com/564x/56/95/27/56952724ee5683ad74754d8da5a3e794.jpg'); 
+    position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.layer {
+   background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+header{
+  display: block;
+  background-color: #7f19e6;
+  color : white;
+  font-size: 45px;
+  opacity: 0.9;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  }
+.camp {
+  float:right;
+  font-size: 20px;
+}
+#main-header {
+  height: 60px;
+  
+}
+#head {
+  font-size: 60px;
+}
+#font {
+  text-align: center;
+    color:white;
+}
+.box{
+  background-color: #000018;
+  opacity: 0.6;
+    border: 1px solid black;
+      border-radius: 0.25rem;
+  padding: 20px;
+  margin:30px;
+}
+.form-group {
+      display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s 
+}
+label {
+  display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  color: white;
+}
+.group {
+      margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+  color: white;
+  font-size: 20px;
+}
+.input-text {
+      min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  color: black;
+} 
+textarea {
+  font-family: inherit;
+  font-weight: bold;
+}
+.submit-b {
+ 
+      display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #7f19e6;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+    
+</style>
+<!DOKTYPE html>
+<html lang="en">
+<head>
+  <title>survery form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="background" class="layer">
+ <header id="main-header">
+   <div> FCC:Survey Form 
+   <div class="camp"> free code camp</div>
+   </div>
+  </header>
+  <div id="font"> <h1 id="head">freeCodeCamp Survey Form</h1>
+    <h2>Thank you for taking the time to help us improve the platform</h2> <br> <br>
+  </div>
+
+    <form class="box"> 
+      <div class="group">
+      <label  for="name">Name </label>
+      <input type="text" name="name" id="name" class="form-group" placeholder="enter your name"required> 
+        <label for="email">Email </label>
+        <input type="email" name="email" id="email" class="form-group" placeholder="enter your email"required>
+        <label for="number"> Age </label>
+        <input type="number" name="Age" id="number" class="form-group" placeholder="Age"> </div>
+        <div class="group">
+        <p>Which option best describes your current role?</p>
+  <select name="role" class="form-group"required>
+    <option disabled selected value>Select current role</option>
+    <option value="student"> student </option>
+    <option value="job"> Full Time Job </option>
+    <option value="learner"> Full Time Learner</option>
+    <option value="other"> Other </option>
+          </select> </div>
+        <div class="group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-text" name="comment" placeholder="Enter Your Comment Here..." > </textarea> </div>
+      <div class="group">
+          <button type="submit" id="submit" class="submit-b"> Submit </button> </div>
+      
+  </form>
+</body>
+</html>
+
+
